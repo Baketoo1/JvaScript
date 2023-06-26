@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* zarování contentu na střed. přidání barvu pozadí. */
+body{
+    font-family: sans-serif,serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    overflow: hidden;
+}
+/* přidání obrátku do jednotlivých slajdů. */
+.img1{
+    background: url(image/img1.jpg);
+}
+.img2{
+    background: url(image/img2.jpg);
+}
+.img3{
+    background: url(image/img3.jpg);
+}
+.img4{
+    background: url(image/img4.jpg);
+}
+.img5{
+    background: url(image/img5.jpg);
+}
+.container{
+    display: flex;
+    width: 90vw;
+    background: #111;
+    border-radius: 25px;
+
+}
+/* stylizace slajdů */
+.slide{
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    color:  #fff;
+    cursor: pointer;
+    margin: 10px;
+    flex: 0.4;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    transition: 2s ease-out;
+}
+.slide h2{
+    opacity: 0;
+    transition: 0.5s ease-in;
+    left: 100px;
+    position: relative;
+}
+.slide.active{
+    flex: 4;
+}
+.slide.active h2{
+    opacity: 1;
+    top: 0;
+    left: 0;
+}
+/* responzivita */
+@media (max-width: 700px){
+    .container{
+        width: 100vw;
+    }
+
+    .slide:nth-child(4),
+    .slide:nth-child(5){
+        display: none;
+    }
+}
