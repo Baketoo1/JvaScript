@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* zarování contentu na střed. přidání barvu pozadí. */
+/* zarování kontent na střed. přidání barvu pozadí. */
 body{
     font-family: sans-serif,serif;
     height: 100vh;

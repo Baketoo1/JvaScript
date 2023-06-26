@@ -1,8 +1,54 @@
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
-
+/* zarování kontent na střed. přidání barvu pozadí. */
+body{
+    height: 100vh;
+    background: linear-gradient(
+        #222,
+        #111
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* stylizace hledacího pole */
+.search{
+    position: relative;
+}
+.search .inputSearch {
+    background: #fff;
+    border: none;
+    font-size: 20px;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    transition: width 0.5s ease-out;
+}
+/* stylizace tlačítka */
+.search-icon{
+    width: 50px;
+}
+.btn{
+    border: none;
+    cursor: pointer;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-out;
+}
+.btn:focus,
+.inputSearch:focus{
+    outline: none;
+}
+.search.active .inputSearch{
+    width: 200px;
+}
+.search.active .btn{
+    transform: translateX(198px);
+}
