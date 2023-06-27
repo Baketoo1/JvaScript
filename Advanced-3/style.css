@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* zarování kontent na střed. přidání barvu pozadí. */
 body{
     height: 100vh;
     background: linear-gradient(
@@ -14,7 +13,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-/* stylizace hledacího pole */
+/* search styling */
 .search{
     position: relative;
 }
@@ -27,7 +26,7 @@ body{
     height: 50px;
     transition: width 0.5s ease-out;
 }
-/* stylizace tlačítka */
+/* button styling */
 .search-icon{
     width: 50px;
 }

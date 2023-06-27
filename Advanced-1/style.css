@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* zarování kontent na střed. přidání barvu pozadí. */
 body{
     height: 100vh;
     display: flex;
@@ -18,7 +17,7 @@ body{
     text-transform: uppercase;
     flex-direction: column;
 }
-/* stylizace inputu. */
+/* input styling */
 div{
     position: absolute;
     bottom: 30px;
